@@ -192,7 +192,7 @@ for i in range(5):
 missileArray = []
 
 
-#Activo hasta que deje de correr (borreme  3)
+#Activo hasta que deje de correr (borreme  42)
 running = True
 while running == True:
 
