@@ -15,7 +15,7 @@
 
 ## About
 
-A small take on the 1979 arcade classic, written from scratch in a single Pygame file. The ship drifts with inertia, the screen wraps around at every edge, and each large asteroid breaks into three smaller ones when hit. There are no sprites or images: every shape is a list of polar points that the game converts to screen coordinates every frame.
+A small take on the 1979 arcade classic, written from scratch in a single Pygame file. The ship drifts with inertia, the screen wraps around at every edge, and each large asteroid breaks into three smaller ones when hit. There are no sprites or images: the ship and every rock are lists of polar points that the game converts to screen coordinates every frame, and missiles are small dots.
 
 ## Quick start
 
@@ -54,7 +54,7 @@ python asteroids.py
 
 ## Limitations
 
-- There is no score, lives display or game-over screen. When the last life is lost the ship disappears and the rocks keep drifting. <kbd>Space</kbd> still fires from the ship's last position.
+- There is no score, lives display or game-over screen. When the last life is lost the ship disappears and the rocks keep drifting. <kbd>Space</kbd> still fires missiles upward from the centre of the screen, where the ship was last reset.
 - Clearing the field does not start a new wave.
 - Respawning has no invulnerability window, so landing on a rock can cost several lives in consecutive frames.
 - The main loop is uncapped (no `Clock.tick`), so it keeps one CPU core busy.
