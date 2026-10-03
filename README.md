@@ -7,7 +7,6 @@
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Pygame](https://img.shields.io/badge/Pygame-2.x-30363D?style=flat-square)
 ![Status](https://img.shields.io/badge/status-playable-2DA44E?style=flat-square)
-![Year](https://img.shields.io/badge/year-2023-8250DF?style=flat-square)
 
 <img src="docs/preview.gif" alt="A triangular ship thrusting, turning and firing at outlined asteroids that split into smaller ones" width="560">
 
@@ -59,10 +58,6 @@ python asteroids.py
 - Respawning has no invulnerability window, so landing on a rock can cost several lives in consecutive frames.
 - The main loop is uncapped (no `Clock.tick`), so it keeps one CPU core busy.
 - `corazonRojo.png`, a red heart meant for a lives indicator, is not used yet.
-
-## Background
-
-Written in March 2023 while learning Python. The first commits in this repository date from 29 March 2023.
 
 ---
 
